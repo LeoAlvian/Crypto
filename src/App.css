@@ -86,13 +86,13 @@ a:hover{
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1028px){
     .main{
         margin-left: 100px;
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:1028px){
     .app{
         flex-direction: column;
         overflow: hidden;
