@@ -8,6 +8,8 @@ import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCi
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from '../services/cryptoApi'
 import LineChart from './LineChart'
 
+import Loader from './Loader';
+
 const { Title, Text } = Typography
 const { Option } = Select
 
@@ -20,7 +22,7 @@ const CryptoDetails = () => {
 
   // console.log({cryptoDetails})
 
-  if (isFetching) return 'Loading...';
+  if (isFetching) return <Loader />;
 
   const time = ['3h', '24h', '7d', '30d', '3m', '1y', '3y', '5y'];
 
@@ -107,8 +109,8 @@ const CryptoDetails = () => {
               </Col>
               <Col className='coin-desc-link'>
                   <Row className='coin-desc'>
+                        <Title level={3}>What is {cryptoDetails.name}</Title>
                         <Title level={3} className='coin-details-heading'>
-                            What is {cryptoDetails.name}
                             {HTMLReactParser(cryptoDetails.description)}
                         </Title>
                   </Row>

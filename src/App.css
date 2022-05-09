@@ -2,7 +2,7 @@
    --text-primary:#000;
    --bgPrimary:#fff;
    --bgSecondary: #F9F9F9;
-   --pink: #0071bd;
+   --blue: #104179;
    --light-blue: #e6f7ff;
    --border: #d9d9d9;
 }
@@ -14,7 +14,7 @@
 }
 
 a:hover{
-    color: var(--pink) !important;
+    color: var(--blue) !important;
 }
 
 .app{
@@ -24,7 +24,8 @@ a:hover{
 
 .navbar{
     flex: 0.2;
-    background-color: rgb(0, 21, 41);
+    /* background-color: rgb(0, 21, 41); */
+    background-image: linear-gradient(to right, #001529, #243b55);
 }
 
 .main{
@@ -41,11 +42,13 @@ a:hover{
     margin: 10px;
     height: 100vh;
     margin: 0px;
-    background-color: rgb(0, 21, 41);
+    /* background-color: #001529; */
+    background-image: linear-gradient(to right, #001529, #243b55);
 }
 
 .logo-container{
-    background-color: #001529;
+    /* background-color: rgb(0, 21, 41); */
+    background-image: linear-gradient(to right, #001529, #243b55);
     display: flex;
     padding: 20px;
     align-items: center;
@@ -54,6 +57,9 @@ a:hover{
 .logo{
     margin:0 0 0 15px;
 }
+/* .ant-avatar > img{
+    background-color: white;
+} */
 .logo a{
    color: white;
 }
@@ -150,7 +156,7 @@ a:hover{
 
 .coin-heading-container .coin-name{
     font-weight: 900;
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .coin-heading-container p{
@@ -170,13 +176,13 @@ a:hover{
     font-weight: 700;
     font-size: 1.4rem;
     margin-top: 20px;
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .coin-details-heading{
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     margin-top: 20px !important;
-    color: var(--pink) !important;
+    color: black !important;
 }
 
 .coin-stats{
@@ -213,7 +219,7 @@ a:hover{
 
 .coin-desc-link h2{
     font-weight: 700;
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .coin-desc-link p{
@@ -222,7 +228,7 @@ a:hover{
 }
 
 .coin-desc-link a{
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .coin-desc-link h3{
@@ -252,7 +258,7 @@ a:hover{
 }
 
 .coin-link a{
-    color: var(--pink);
+    color: var(--blue);
     font-weight: 700;
     font-size: 1rem;
 }
@@ -321,10 +327,10 @@ width: 70%;
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    color: #0071bd;
+    color: var(--blue);
 }
 .chart-title{
-    color: #0071bd !important;
+    color: var(--blue) !important;
 }
 .price-container{
     display: flex !important;
@@ -348,6 +354,9 @@ width: 70%;
 .show-more{
     margin-top: 0px !important;
 }
+.show-more a {
+    color: var(--blue) !important;
+}
 .exchange-image{
     margin: 0px 10px !important;
 }
@@ -370,7 +379,8 @@ width: 70%;
 }
 
 .footer {
-    background-color: #001529;
+    /* background-color: #001529; */
+    background-image: linear-gradient(to left, #001529, #243b55);
     display: flex;
     flex-direction: column;
     padding: 20px;
